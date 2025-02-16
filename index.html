@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Portfolio farhan</title>
+  </head>
+  <body>
+    <style>
+      .btn-whatsapp {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #25d366; /* Warna hijau WhatsApp */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        position: center;
+      }
+
+      .btn-whatsapp i {
+        margin-right: 5px;
+      }
+    </style>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#"><span>Web</span>Profile</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#certificate">Certification</a></li>
+        <li><a href="assets/cv_farhan.pdf" download="">Download CV</a></li>
+      </ul>
+      <div class="nav__btn">
+        <a href="assets/cv_farhan.pdf" download="">Download CV</a>
+      </div>
+    </nav>
+
+    <header class="section__container header__container" id="about">
+      <div class="header__image">
+        <img src="assets/farhan_img.jpeg" alt="header" />
+      </div>
+      <div class="header__content">
+        <p class="section__subheader">Welcome</p>
+        <h1>Mokhamad<span> Farhan</span> Abdillah</h1>
+        <p class="section__description">Welcome to my Portfolio website</p>
+        <div class="header__btns">
+          <button class="btn">Contact Me</button>
+          <a href="#">
+            View Portfolio
+            <span><i class="ri-arrow-right-up-line"></i></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container stats__container">
+      <div class="stats__card">
+        <h4>Many</h4>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <h4>10+</h4>
+        <p>Project completed</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <h4>99+</h4>
+        <p>Reviews given</p>
+      </div>
+    </section>
+
+    <section class="section__container skill__container" id="skill">
+      <div class="skill__content">
+        <p class="section__subheader">My Skills</p>
+        <h2 class="section__header">Why Hire Me For Your Next <span>Project?</span></h2>
+        <p class="section__description">Saya memiliki skill dan keterampilan yang relevan dalam dunia web-development dan UI/UX Design</p>
+        <!-- <div class="skill__btn">
+          <button class="btn">Hire Me</button>
+        </div> -->
+      </div>
+      <div class="skill__grid">
+        <div class="skill__card">
+          <span><i class="ri-edit-line"></i></span>
+          <h4>Figma</h4>
+          <p>Mahir dalam membuat design Interface aplikasi Mobile dan Website</p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-code-s-slash-line"></i></span>
+          <h4>Laravel</h4>
+          <p>Mahir dalam membuat backend aplikasi website dengan menggunakan framework laravel</p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-flutter-fill"></i></span>
+          <h4>Flutter</h4>
+          <p>Berpengalaman dalam membuat aplikasi Mobile dengan Framework Flutter</p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-database-2-fill"></i></span>
+          <h4>MySQL</h4>
+          <p>Familiar dalam menggunakan database SQL dalam membuat aplikasi</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio__container" id="portfolio">
+      <div class="portfolio__content">
+        <p class="section__subheader">Portfolio</p>
+        <h2 class="section__header">Projects <span>Terbaru</span></h2>
+        <p class="section__description">Beberapa projects terbaru yang pernah saya kerjakan</p>
+        <!-- <div class="portfolio__btn">
+          <button class="btn">Show More</button>
+        </div> -->
+      </div>
+      <div class="portfolio__image__wrapper">
+        <div class="portfolio__image">
+          <img src="assets/project_1.JPG" alt="portfolio" />
+          <img src="assets/projects_2.jpg" alt="portfolio" />
+          <img src="assets/projects_3.JPG" alt="portfolio" />
+          <img src="assets/projects_4.JPG" alt="portfolio" />
+          <img src="assets/projects_5.JPG" alt="portfolio" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container review__container" id="certificate">
+      <p class="section__subheader">Certifications</p>
+      <h2 class="section__header">My Certification<span> Skill</span></h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__card">
+              <img src="assets/sertif_1.jpg" style="height: 400px; width: 360px" alt="" />
+              <div class="review__details">
+                <div>
+                  <h4 style="margin-top: 40px">Sertifikat MSIB</h4>
+                  <h5>pernah mengikuti Bootcamp MSIB batch 6 PT.GreatEdu</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__card">
+              <img src="assets/sertif_2.jpg" style="height: 420px; width: 400px" alt="" />
+              <div class="review__details">
+                <div>
+                  <h4 style="margin-top: 24px">Sertifikat TOEFl</h4>
+                  <h5>Pernah mengikuti test Toefl dan mendapatkan nilai 483</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__card">
+              <img src="assets/sertif_3.jpg" style="height: 420px; width: 400px" alt="" />
+              <div class="review__details">
+                <div>
+                  <h4 style="margin-top: 24px">Alice Brown</h4>
+                  <h5>Freelance Graphic Designer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section__container certificate__container" id="certificate">
+      <p class="section__subheader">Our Certifications</p>
+      <h2 class="section__header">Our Achievements</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__card">
+              <img src="assets/portfolio-1.jpg" alt="Certificate 1" />
+              <div class="certificate__details">
+                <h4>Certificate Title</h4>
+                <p>Certificate description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__card">
+              <img src="assets/portfolio-1.jpg" alt="Certificate 1" />
+              <div class="certificate__details">
+                <h4>Certificate Title</h4>
+                <p>Certificate description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section__container contact__container">
+      <p class="section__subheader">Kontak</p>
+      <h2 class="section__header">Mari Diskusikan <span>Project</span> Anda</h2>
+      <p class="section__description">Hubungi nomor dibawah ini</p>
+      <div style="display: flex; justify-content: center">
+        <a href="https://wa.me/6281353401336" target="_blank" class="btn-whatsapp"> <i class="fab fa-whatsapp"></i> Hubungi Kami </a>
+      </div>
+    </section>
+
+    <footer class="section__container footer__container">
+      <p>Copyright © 2024 Web Portfolio Farhan</p>
+      <ul class="footer__socials">
+        <!-- <li>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </li> -->
+        <!-- <li>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </li> -->
+        <li>
+          <a href="https://www.linkedin.com/in/m-farhan-abdillah-38aa7322b/"><i class="ri-linkedin-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
